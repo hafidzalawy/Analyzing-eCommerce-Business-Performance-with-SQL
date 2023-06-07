@@ -15,3 +15,8 @@ Before starting data processing, the first step that must be done is to prepare 
 
 ![Alt text](https://github.com/hafidzalawy/Analyzing-eCommerce-Business-Performance-with-SQL/blob/master/Figure/Data%2BRelationship.png?raw=true)
 <br>Figure 1. Data Relationship
+
+After making adjustments to the Primary Key (PK) and Foreign Key (FK), the following ERD results are generated as shown in figure 2.
+
+![Alt text](https://github.com/hafidzalawy/Analyzing-eCommerce-Business-Performance-with-SQL/blob/master/Figure/ERD%20model%20PostgreSQL.PNG?raw=true)
+<br>Figure 2. Entity Relationship Diagram (ERD)
