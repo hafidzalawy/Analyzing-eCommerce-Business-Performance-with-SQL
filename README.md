@@ -6,7 +6,7 @@ In today's highly competitive business landscape, analyzing the performance of a
 on this occasion, I will analyze the business performance of an eCommerce company, taking into account several business metrics, by reviewing customer growth, product quality, and type of payment. 
 
 ## Data Preparation 
-Before starting data processing, the first step that must be done is to prepare the raw data into structured and ready-to-process data. The following eCommerce dataset consists of 8 datasets that will interact with each other. So the steps taken are as follows:
+Before processing the data, the first step that needs to be done is to prepare the raw data so that it becomes structured data and is ready for processing. The datasets used in this project are 8 datasets which have a relationship with one another. Below are the steps for data preparation:
 
 - Create a new database and its tables for the data that has been prepared by paying attention to the data type of each column.
 - Importing csv data into the database by paying attention to the dataset storage path.
