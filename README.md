@@ -13,5 +13,5 @@ Before starting data processing, the first step that must be done is to prepare 
 - Create entity relationships between tables, based on the schema in Figure 1. Data Relationship. 
 - Then export the Entity Relationship Diagram (ERD) in the form of an image by setting the data type and naming the columns between interconnected tables.
 
-![image]([https://user-images.githubusercontent.com/77976107/173325369-97674007-82ba-42e1-92eb-52c7bd6bcf59.png](https://github.com/hafidzalawy/Analyzing-eCommerce-Business-Performance-with-SQL/blob/037b247b6c18ce6291358d50014488269f1d1742/Figure/Data%2BRelationship.png))
+![Alt text](https://github.com/hafidzalawy/Analyzing-eCommerce-Business-Performance-with-SQL/blob/master/Figure/Data%2BRelationship.png?raw=true)
 <br>Figure 1. Data Relationship
