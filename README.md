@@ -20,3 +20,10 @@ After making adjustments to the Primary Key (PK) and Foreign Key (FK), the follo
 
 ![Alt text](https://github.com/hafidzalawy/Analyzing-eCommerce-Business-Performance-with-SQL/blob/master/Figure/ERD%20model%20PostgreSQL.PNG?raw=true)
 <br>Figure 2. Entity Relationship Diagram (ERD)
+
+## Annual Customer Activity Growth Analysis
+
+## Annual Product Category Analysis
+
+## Annual Payment Type Usage Analysis
+
