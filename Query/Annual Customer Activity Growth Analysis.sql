@@ -53,7 +53,7 @@ ORDER BY 1
 
 --4 Menampilkan rata-rata frekuensi order untuk setiap tahun
 
-SELECT year, ROUND(AVG(freq), 2) AS avg_frequency_order
+SELECT year, ROUND(AVG(freq), 3) AS avg_frequency_order
 FROM (
 	SELECT
 		date_part('year', od.order_purchase_timestamp) AS year,
@@ -116,7 +116,7 @@ cte_repeat_order AS (
 ),
 
 cte_frequency AS (
-	SELECT year, ROUND(AVG(freq), 2) AS avg_frequency_order
+	SELECT year, ROUND(AVG(freq), 3) AS avg_frequency_order
 	FROM (
 		SELECT
 			date_part('year', od.order_purchase_timestamp) AS year,
