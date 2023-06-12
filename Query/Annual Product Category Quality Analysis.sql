@@ -57,10 +57,10 @@ CREATE TABLE canceled_category AS
 		total_canceled
 	FROM (
 		SELECT
-			date_part('year', shipping_limit_date) AS year,
+			date_part('year', od.order_purchase_timestamp) AS year,
 			pd.product_category_name AS most_canceled,
 			COUNT(od.order_id) AS total_canceled,
-			RANK() OVER (PARTITION BY date_part('year', shipping_limit_date)
+			RANK() OVER (PARTITION BY date_part('year', od.order_purchase_timestamp)
 			ORDER BY COUNT(od.order_id) DESC) AS ranking
 		FROM orders_dataset AS od
 		JOIN order_items_dataset AS oid
