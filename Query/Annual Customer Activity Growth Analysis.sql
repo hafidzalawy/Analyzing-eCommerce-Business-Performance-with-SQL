@@ -1,6 +1,6 @@
 --Annual Customer Activity Growth Analysis
 
---1 Menampilkan rata-rata Monthly Active User (MAU) per tahun
+--1 Shows the average monthly active user (MAU) per year
 
 SELECT year, FLOOR(AVG(customer_total)) AS avg_mau
 FROM (
@@ -17,7 +17,7 @@ GROUP BY 1
 ORDER BY 1
 ;
 
---2 Menampilkan total customer baru per tahun
+--2 Shows total new customers per year
 
 SELECT year, COUNT(customer_unique_id) AS total_new_customer
 FROM (
@@ -33,7 +33,7 @@ GROUP BY 1
 ORDER BY 1
 ;
 
---3 Menampilkan jumlah customer repeat order pada per tahun
+--3 Displays the number of repeat customer orders per year
 
 SELECT year, count(customer_unique_id) AS customer_repeat_order
 FROM (
@@ -51,7 +51,7 @@ GROUP BY 1
 ORDER BY 1
 ;
 
---4 Menampilkan rata-rata frekuensi order untuk setiap tahun
+--4 Displays the average frequency of orders for each year
 
 SELECT year, ROUND(AVG(freq), 3) AS avg_frequency_order
 FROM (
@@ -68,7 +68,7 @@ GROUP BY 1
 ORDER BY 1
 ;
 
---5 Menggabungkan keempat metrik menjadi satu tampilan tabel
+--5 Combines all four metrics into one table view
 
 WITH cte_mau AS (
 	SELECT year, FLOOR(AVG(customer_total)) AS avg_mau
