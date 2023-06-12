@@ -79,18 +79,18 @@ DELETE FROM canceled_category WHERE year = 2020;
 
 -- Displaying all
 SELECT
-ar.year,
-ar.revenue AS annual_revenue,
-tp.product_category_name AS top_product_category,
-tp.product_revenue AS total_revenue_top_product,
-aco.canceled AS annual_canceled_order,
-cc.most_canceled AS top_canceled_product,
-cc.total_canceled AS total_top_canceled_product
+	ar.year,
+	ar.revenue AS annual_revenue,
+	tp.product_category_name AS top_product_category,
+	tp.product_revenue AS total_revenue_top_product,
+	aco.canceled AS annual_canceled_order,
+	cc.most_canceled AS top_canceled_product,
+	cc.total_canceled AS total_top_canceled_product
 FROM annual_revenue AS ar
 JOIN top_product_category AS tp
-ON ar.year = tp.year
+	ON ar.year = tp.year
 JOIN annual_canceled_order AS aco
-ON tp.year = aco.year
+	ON tp.year = aco.year
 JOIN canceled_category AS cc
-ON aco.year = cc.year
+	ON aco.year = cc.year
 GROUP BY ar.year, ar.revenue, tp.product_category_name, tp.product_revenue, aco.canceled, cc.most_canceled, cc.total_canceled;
